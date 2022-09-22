@@ -3,8 +3,12 @@ const axios = require('axios')
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
+require('dotenv').config();
+
 const port = process.env.PORT || 3000
 const app = express()
+
+console.log(process.env.PX_APP_ID);
 
 app.use((request, response, next) => {
   console.log("set header");
