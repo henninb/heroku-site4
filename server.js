@@ -14,7 +14,7 @@ console.log(process.env.PX_APP_ID)
 const pxConfig = {
     px_app_id: process.env.PX_APP_ID,
     px_cookie_secret: process.env.PX_COOKIE_SECRET,
-    px_auth_token: PX_AUTH_TOKEN,
+    px_auth_token: process.env.PX_AUTH_TOKEN,
     px_module_mode: "active_blocking",
     px_enforced_routes: ['/protected'],
     px_monitored_routes: ['/monitored'],
