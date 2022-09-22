@@ -1,10 +1,14 @@
 #!/bin/sh
 
-if [ ! -x "$(command -v node)" ]; then
-  echo "Please install node"
-  exit 1
-fi
+export NODE_OPTIONS=--openssl-legacy-provider
 
+# if [ ! -x "$(command -v pnpm)" ]; then
+#   echo "Please install pnpm via npm"
+#   echo "npm install -g pnpm"
+#   exit 2
+# fi
+
+# touch apikey
 npm install
 npm start
 
