@@ -10,7 +10,6 @@ const port = process.env.PORT || 3000;
 
 /* PerimeterX Bot Defender Config */
 
-console.log(process.env.PX_APP_ID)
 const pxConfig = {
     px_app_id: process.env.PX_APP_ID,
     px_cookie_secret: process.env.PX_COOKIE_SECRET,
